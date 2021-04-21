@@ -1,10 +1,12 @@
 import './App.css';
-import Hooks from './Hooks';
+
+import Users from './Users';
 
 function App() {
   return (
     <div className="App">
-      <Hooks />
+      
+      <Users />
     </div>
   );
 }

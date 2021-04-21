@@ -1,19 +1,19 @@
 import React from 'react';
-import './HooksList.css';
+import './UsersList.css';
 
-function HooksList(props) {
+function UsersList(props) {
 
-    let hooksList = props.hooksList;
-    let hooksLiElements = hooksList.map((user) => {
+    let UsersList = props.UsersList;
+    let UsersLiElements = UsersList.map((user) => {
         return <li key={user.id}>{user.name} <span onClick={() => {props.removeUserMethod(user.id);}}>X</span></li>
     });
     
 
     return(
         <ul className="the-list">
-            {hooksLiElements}
+            {UsersLiElements}
         </ul>
     );
 }
 
-export default HooksList;
+export default UsersList;
